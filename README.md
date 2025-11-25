@@ -1,0 +1,1 @@
+This repository contains the necessary files and configuration to set up a data ingestion environment using Databricks Unity Catalog and establish a scheduled Databricks Job pipeline for monthly data extraction and processing.
