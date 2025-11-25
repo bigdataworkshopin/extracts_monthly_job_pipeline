@@ -16,7 +16,7 @@ resources:
         - name: dealer_status
           default: Open
         - name: dir_tmp
-          default: /Volumes/uc_sp/sales_reporting/sales/reporting/
+          default: /Volumes/alldatatech_project/sales_reporting/enrollment_files/reporting/
         - name: email_cc
           default: bigdataworkshop.in@gmail.com
         - name: email_from
