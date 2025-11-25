@@ -1,0 +1,40 @@
+resources:
+  jobs:
+    wf_extracts_monthly:
+      name: wf_extracts_monthly
+      tasks:
+        - task_key: Dealer_Extract
+          notebook_task:
+            notebook_path: /Workspace/sp/extract/Extract
+            source: WORKSPACE
+          environment_key: Default
+      queue:
+        enabled: true
+      parameters:
+        - name: country
+          default: India
+        - name: dealer_status
+          default: Open
+        - name: dir_tmp
+          default: /Volumes/uc_sp/sales_reporting/sales/reporting/
+        - name: email_cc
+          default: bigdataworkshop.in@gmail.com
+        - name: email_from
+          default: sales@alldatatech.ai
+        - name: email_to
+          default: deshbandhu.mishra@gmail.com
+        - name: env
+          default: dev
+        - name: from_date
+          default: ""
+        - name: product_name
+          default: CRM
+        - name: to_date
+          default: ""
+        - name: workflow_name
+          default: wf_extracts_monthly
+      environments:
+        - environment_key: Default
+          spec:
+            environment_version: "2"
+      performance_target: STANDARD
